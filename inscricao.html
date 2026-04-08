@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Simpósio de Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Simpósio 2026</div>
+            <ul>
+                <li><a href="index.html">Programação</a></li>
+                <li><a href="inscricao.html" class="active">Inscrições</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h1>Inscrição no Evento</h1>
+            <p>Preencha os dados abaixo para garantir sua vaga.</p>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Telefone/Celular</label>
+                    <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="palestra">Escolha sua Palestra</label>
+                    <select id="palestra" name="palestra" required>
+                        <option value="" disabled selected>Selecione uma opção...</option>
+                        <option value="ia">O Futuro da IA no Desenvolvimento</option>
+                        <option value="cloud">Cibersegurança na Era da Nuvem</option>
+                        <option value="ux">UX Design: Além da Interface</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-confirmar">Confirmar Inscrição</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Simpósio de Informática</p>
+    </footer>
+</body>
+</html>
